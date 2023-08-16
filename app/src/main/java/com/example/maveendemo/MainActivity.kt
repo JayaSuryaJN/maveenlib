@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.maveendemo.ui.theme.MaveenDemoTheme
+import com.example.maveenlibrary.demo
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +27,8 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        val demoInstance = demo()
+        demoInstance.showToast(this, "This is a toast message")
     }
 }
 
