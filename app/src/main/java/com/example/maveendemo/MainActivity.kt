@@ -23,12 +23,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    Greeting("Surya")
                 }
             }
         }
         val demoInstance = demo()
-        demoInstance.showToast(this, "This is a toast message")
+        demoInstance.showToast(this, "Library is working")
     }
 }
 
